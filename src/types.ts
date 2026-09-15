@@ -1,7 +1,7 @@
 export interface Dish {
   id: string;
   name: string;
-  category: 'Utama' | 'Sup & Kuah' | 'Kudapan' | 'Minuman' | 'Paket Jamuan';
+  category: 'Nasi Goreng' | 'Nasi Kuning' | 'Utama' | 'Sup & Kuah' | 'Kudapan' | 'Minuman' | 'Paket Jamuan';
   description: string;
   price: number;
   imageUrl: string;

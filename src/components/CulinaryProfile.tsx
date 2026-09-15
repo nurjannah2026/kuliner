@@ -46,7 +46,7 @@ export const CulinaryProfile: React.FC<CulinaryProfileProps> = ({
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
-            alt="Suasana Selera Nusantara"
+            alt={`Suasana ${RESTAURANT_PROFILE.name}`}
             className="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 transform hover:scale-100 transition-transform duration-1000"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-900/80 to-transparent" />

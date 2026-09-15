@@ -1,14 +1,14 @@
 import { RestaurantProfile, Dish, DiningArea, CustomerReview, TimeSlot } from '../types';
 
 export const RESTAURANT_PROFILE: RestaurantProfile = {
-  name: 'Selera Nusantara',
-  tagline: 'Warisan Cita Rasa Rempah Pusaka & Pengalaman Gastronomi Tradisional',
-  shortBio: 'Restoran kuliner autentik Indonesia yang memadukan kehangatan resep warisan leluhur, rempah segar pilihan dari petani lokal nusantara, dan suasana jamuan bersahaja.',
-  storyTitle: 'Perjalanan Menjaga Ruh Rasa Nusantara',
+  name: 'Atrana',
+  tagline: 'Spesialis Nasi Goreng Wok & Nasi Kuning Rempah Keraton Nusantara',
+  shortBio: 'Restoran kuliner autentik spesialis aneka Nasi Goreng kuali baja arang dan Nasi Kuning rempah harum pusaka Nusantara, dipadu jamuan istimewa beraroma tradisi.',
+  storyTitle: 'Perjalanan Menjaga Ruh Rasa Nasi Goreng & Nasi Kuning Nusantara',
   storyDescription: [
-    'Berdiri sejak 2012, Selera Nusantara berawal dari kecintaan mendalam terhadap kekayaan bumbu dapur Nusantara yang begitu beragam dari Sabang sampai Merauke. Kami percaya bahwa setiap racikan rempah membawa jejak kebudayaan, kehangatan keluarga, dan filosofi hidup para tetua.',
-    'Dapur kami dipimpin langsung oleh Chef Aryo Dananjaya yang mendedikasikan lebih dari 18 tahun untuk meneliti teknik memasak tradisional lambat (slow cooking) dengan kayu arang, gerabah tanah liat, dan rempah segar tanpa pengawet atau penyedap sintetis.',
-    'Setiap hidangan yang tersaji di meja Anda adalah perayaan rasa—dari Rendang Tok Kayu Bakar yang dimasak 8 jam, Bebek Betutu Gianyar yang harum dedaunan rempah, hingga Kesegaran Es Pisang Ijo Daun Suji.'
+    'Berdiri sejak 2012, Atrana berawal dari kecintaan mendalam terhadap seni memasak nasi goreng rempah dengan wajan kuali baja tempa di atas api arang membara, serta keanggunan nasi kuning rempah keraton yang diaron bersama kunyit segar pilihan dan santan kelapa murni.',
+    'Dapur kami dipimpin langsung oleh Chef Aryo Dananjaya yang mendedikasikan lebih dari 18 tahun untuk meneliti formula bumbu nasi goreng dan nasi kuning khas berbagai daerah Nusantara—dipadukan dengan teknik memasak tradisional lambat (slow cooking), gerabah tanah liat, dan bahan segar alami tanpa penyedap sintetis.',
+    'Setiap piring yang tersaji di meja Anda adalah perayaan rasa—dari Nasi Goreng Rempah Kambing Muda Atrana beraroma minyak samin murni, Nasi Kuning Komplit Keraton harum daun pandan suji, hingga Rendang Tok Kayu Bakar yang dimasak 8 jam.'
   ],
   chefName: 'Chef Aryo Dananjaya',
   chefTitle: 'Executive Chef & Heritage Food Researcher',
@@ -118,6 +118,91 @@ export const TIME_SLOTS: TimeSlot[] = [
 ];
 
 export const CULINARY_DISHES: Dish[] = [
+  {
+    id: 'dish-nasgor-1',
+    name: 'Nasi Goreng Rempah Kambing Muda Atrana',
+    category: 'Nasi Goreng',
+    description: 'Menu mahakarya khas Atrana: Nasi beras pera ditumis dalam kuali baja panas dengan minyak samin murni, potongan daging kambing muda empuk bumbu rempah kapulaga, kayu manis, dan cengkeh, disajikan lengkap dengan acar nanas bawang, emping melinjo renyah, dan sate kambing mini.',
+    price: 88000,
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
+    rating: 5.0,
+    reviewsCount: 520,
+    spicyLevel: 2,
+    isChefSpecial: true,
+    portion: 'Porsi 1 Orang Kenyang',
+    origin: 'Racikan Khas Atrana (Heritage Wok)',
+    keyIngredients: ['Beras Pera Pilihan', 'Daging Kambing Muda', 'Minyak Samin Murni', 'Kapulaga Jawa', 'Acar Nanas Bawang', 'Emping Melinjo'],
+    allergens: ['Daging Kambing', 'Kacang Melinjo'],
+    calories: 560
+  },
+  {
+    id: 'dish-nasgor-2',
+    name: 'Nasi Goreng Kecombrang Cakalang Asap Wok',
+    category: 'Nasi Goreng',
+    description: 'Perpaduan wangi semerbak irisan kuncup bunga kecombrang segar dan suwiran ikan cakalang asap fufu khas Manado, ditumis dengan cabai rawit merah, daun jeruk purut, dan telur mata sapi ceplok setengah matang.',
+    price: 76000,
+    imageUrl: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80',
+    rating: 4.9,
+    reviewsCount: 430,
+    spicyLevel: 2,
+    isChefSpecial: true,
+    portion: 'Porsi 1 Orang',
+    origin: 'Sulawesi Utara & Nusantara',
+    keyIngredients: ['Bunga Kecombrang Segar', 'Cakalang Asap Fufu', 'Cabai Rawit Merah', 'Daun Jeruk', 'Telur Bebek Omega'],
+    allergens: ['Ikan / Seafood', 'Telur'],
+    calories: 480
+  },
+  {
+    id: 'dish-nasgor-3',
+    name: 'Nasi Goreng Babat Gongso Semarangan',
+    category: 'Nasi Goreng',
+    description: 'Babat sapi tebal dan iso yang direbus rempah serai jahe hingga sangat empuk lembut, kemudian digongso di wajan kuali arang dengan kecap kedelai hitam manis pusaka, cabai rawit pedas gurih, dan taburan bawang merah Sumenep goreng.',
+    price: 82000,
+    imageUrl: 'https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=800&q=80',
+    rating: 4.9,
+    reviewsCount: 390,
+    spicyLevel: 2,
+    isChefSpecial: true,
+    portion: 'Porsi 1 Orang',
+    origin: 'Jawa Tengah (Semarang)',
+    keyIngredients: ['Babat Sapi Pilihan', 'Kecap Manis Tradisional', 'Cabai Rawit Ulek', 'Bawang Merah Sumenep', 'Kerupuk Udang'],
+    allergens: ['Daging Sapi', 'Kedelai'],
+    calories: 520
+  },
+  {
+    id: 'dish-naskun-1',
+    name: 'Nasi Kuning Keraton Komplit Spesial Atrana',
+    category: 'Nasi Kuning',
+    description: 'Beras pulen diaron dengan santan kental murni, perasan kunyit segar tanah Jawa, serai, daun salam, dan daun pandan wangi. Disajikan komplit dengan ayam goreng lengkuas empuk renyah, sambal goreng ati ampla kentang balado, perkedel kentang lembut, telur balado, orek tempe manis gurih, dan taburan serundeng kelapa sangrai.',
+    price: 85000,
+    imageUrl: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80',
+    rating: 5.0,
+    reviewsCount: 480,
+    spicyLevel: 1,
+    isChefSpecial: true,
+    portion: 'Porsi 1 Orang Puas',
+    origin: 'D.I. Yogyakarta & Jawa Tradisional',
+    keyIngredients: ['Beras Aromatik Pilihan', 'Kunyit Segar & Santan Kental', 'Ayam Goreng Lengkuas', 'Sambal Goreng Ati Kentang', 'Serundeng Kelapa Sangrai', 'Perkedel Kentang'],
+    allergens: ['Unggas', 'Kedelai', 'Telur'],
+    calories: 590
+  },
+  {
+    id: 'dish-naskun-2',
+    name: 'Nasi Kuning Manado Cakalang Fufu Rica',
+    category: 'Nasi Kuning',
+    description: 'Nasi kuning khas pesisir Manado beraroma gurih rempah santan kental, disajikan dengan suwiran cakalang fufu asap bumbu rica-rica pedas harum kemangi, telur rebus bumbu kecap pindang, mi goreng kunyit, kerupuk, dan sambal roa bakar khas Minahasa.',
+    price: 79000,
+    imageUrl: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
+    rating: 4.9,
+    reviewsCount: 340,
+    spicyLevel: 3,
+    isChefSpecial: true,
+    portion: 'Porsi 1 Orang',
+    origin: 'Sulawesi Utara (Manado)',
+    keyIngredients: ['Beras Pulen Santan Kunyit', 'Cakalang Asap Fufu', 'Bumbu Rica Kemangi', 'Sambal Roa Bakar', 'Telur Pindang'],
+    allergens: ['Ikan / Seafood', 'Telur', 'Kedelai'],
+    calories: 510
+  },
   {
     id: 'dish-1',
     name: 'Rendang Daging Tok Kayu Bakar',

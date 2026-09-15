@@ -31,7 +31,7 @@ export const MenuCatalog: React.FC<MenuCatalogProps> = ({
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [onlyChefSpecial, setOnlyChefSpecial] = useState<boolean>(false);
 
-  const categories = ['Semua', 'Utama', 'Sup & Kuah', 'Kudapan', 'Minuman', 'Paket Jamuan'];
+  const categories = ['Semua', 'Nasi Goreng', 'Nasi Kuning', 'Utama', 'Sup & Kuah', 'Kudapan', 'Minuman', 'Paket Jamuan'];
 
   const filteredDishes = CULINARY_DISHES.filter((dish) => {
     const matchCategory = selectedCategory === 'Semua' || dish.category === selectedCategory;

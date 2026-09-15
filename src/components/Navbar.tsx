@@ -59,11 +59,12 @@ export const Navbar: React.FC<NavbarProps> = ({
               <UtensilsCrossed className="w-6 h-6" />
             </div>
             <div>
-              <span className="block font-serif-display font-bold text-xl sm:text-2xl text-stone-900 tracking-tight leading-none group-hover:text-amber-800 transition-colors">
-                Selera Nusantara
+              <span className="block font-serif-display font-extrabold text-2xl sm:text-3xl text-stone-900 tracking-tight leading-none group-hover:text-amber-800 transition-colors">
+                Atrana
               </span>
-              <span className="text-[11px] text-stone-500 font-medium tracking-wide uppercase mt-0.5">
-                Heritage Dining & Spices
+              <span className="text-[11px] font-bold tracking-wider uppercase mt-1 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-50 text-amber-900 border border-amber-200/80 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-gradient-to-tr from-amber-600 to-yellow-400 inline-block" />
+                <span>Nasi Goreng &amp; Nasi Kuning</span>
               </span>
             </div>
           </button>

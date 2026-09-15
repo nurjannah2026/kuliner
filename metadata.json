@@ -1,6 +1,6 @@
 {
   "name": "Selera Nusantara - Reservasi & Profil Kuliner",
-  "description": "Website kuliner untuk pemesanan meja dan booking jadwal santap online dengan sajian profil kuliner autentik, menu andalan, dan e-ticket instan.",
+  "description": "Website kuliner Atrana untuk pemesanan meja dan booking jadwal santap online dengan sajian spesialis Nasi Goreng kuali baja dan Nasi Kuning rempah keraton, menu andalan, dan e-ticket instan.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
